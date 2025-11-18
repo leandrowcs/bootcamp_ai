@@ -12,7 +12,6 @@
 - [3203 - Enregistrer et consulter les heures de travail des employés](docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.md)
 
 ### User Stories
-- [3174 - Preparation du bootcamp AI](docs/3174_Preparation-du-bootcamp-AI.md)
 - [3204 - Ajouter les heures travaillées pour un employé](docs/3204_Ajouter-les-heures-travaillees-pour-un-employe.md)
 - [3206 - Consulter le rapport hebdomadaire des heures travaillées](docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.md)
 
@@ -24,3 +23,4 @@
 - [3171 - Atelier 2 - DEMO Cas de Test et Automatisation](docs/3171_Atelier-2-DEMO-Cas-de-Test-et-Automatisation.md)
 - [3172 - Atelier 2 - DEMO Modernisation d'application](docs/3172_Atelier-2-DEMO-Modernisation-d-application.md)
 - [3173 - Capstone Project - Bootcamp AI](docs/3173_Capstone-Project-Bootcamp-AI.md)
+
