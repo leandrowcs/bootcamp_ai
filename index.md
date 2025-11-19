@@ -53,6 +53,7 @@ Ce référentiel documente les progrès et les projets développés pendant le C
 
 ### <span data-lang="en">Capstone Project</span><span data-lang="fr">Projet Capstone</span>
 - <span data-lang="en">[Capstone Project - Bootcamp AI](docs/3173_Capstone-Project-Bootcamp-AI)</span><span data-lang="fr">[Projet Capstone - Bootcamp AI](docs/3173_Capstone-Project-Bootcamp-AI)</span>
+- <span data-lang="en">[Capstone Project 2 - Event Registration Management](docs/3174_Capstone-Project_2-Bootcamp-AI)</span><span data-lang="fr">[Projet Capstone 2 - Gestion d'Inscriptions à Événements](docs/3174_Capstone-Project_2-Bootcamp-AI)</span>
 
 <span data-lang="en">
 ## Navigation
