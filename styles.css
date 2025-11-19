@@ -108,6 +108,17 @@ aside {
   letter-spacing: 0.5px;
 }
 
+.nav-subsection-title {
+  padding: 0.5rem 1.5rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  color: var(--secondary);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 0.5rem;
+}
+
 .nav-section ul {
   list-style: none;
 }

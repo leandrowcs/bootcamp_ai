@@ -1,14 +1,4 @@
 const docs = {
-  epic: [
-    { id: '3202', titleEn: 'DEMO', titleFr: 'DEMO', file: 'docs/3202_DEMO.md' }
-  ],
-  feature: [
-    { id: '3203', titleEn: 'Record and View Employee Work Hours', titleFr: 'Enregistrer et consulter les heures de travail des employés', file: 'docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.md' }
-  ],
-  userStories: [
-    { id: '3204', titleEn: 'Add Worked Hours for Employee', titleFr: 'Ajouter les heures travaillées pour un employé', file: 'docs/3204_Ajouter-les-heures-travaillees-pour-un-employe.md' },
-    { id: '3206', titleEn: 'View Weekly Work Hours Report', titleFr: 'Consulter le rapport hebdomadaire des heures travaillées', file: 'docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.md' }
-  ],
   workshops: [
     { id: '3167', titleEn: 'Workshop 1 - BASIC Calculator', titleFr: 'Atelier 1 - Calculatrice BASIC', file: 'docs/3167_Atelier-1-Calculatrice-BASIC.md' },
     { id: '3168', titleEn: 'Workshop 1 - Image Mockup', titleFr: 'Atelier 1 - Image Mockup', file: 'docs/3168_Atelier-1-Image-Mockup.md' },
@@ -19,20 +9,34 @@ const docs = {
   ],
   capstone: [
     { id: '3173', titleEn: 'Capstone Project - Bootcamp AI', titleFr: 'Projet Capstone - Bootcamp AI', file: 'docs/3173_Capstone-Project-Bootcamp-AI.md' }
-  ]
+  ],
+  azureProject: {
+    epic: [
+      { id: '3202', titleEn: 'DEMO', titleFr: 'DEMO', file: 'docs/3202_DEMO.md' }
+    ],
+    feature: [
+      { id: '3203', titleEn: 'Record and View Employee Work Hours', titleFr: 'Enregistrer et consulter les heures de travail des employés', file: 'docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.md' }
+    ],
+    userStories: [
+      { id: '3204', titleEn: 'Add Worked Hours for Employee', titleFr: 'Ajouter les heures travaillées pour un employé', file: 'docs/3204_Ajouter-les-heures-travaillees-pour-un-employe.md' },
+      { id: '3206', titleEn: 'View Weekly Work Hours Report', titleFr: 'Consulter le rapport hebdomadaire des heures travaillées', file: 'docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.md' }
+    ]
+  }
 };
 
 const categories = {
+  workshops: { en: 'Workshops', fr: 'Ateliers' },
+  capstone: { en: 'Capstone Project', fr: 'Projet Capstone' },
+  azureProject: { en: 'Azure DEMO Project', fr: 'Projet DEMO Azure' },
   epic: { en: 'Epic', fr: 'Epic' },
   feature: { en: 'Features', fr: 'Fonctionnalités' },
-  userStories: { en: 'User Stories', fr: 'Histoires Utilisateur' },
-  workshops: { en: 'Workshops', fr: 'Ateliers' },
-  capstone: { en: 'Capstone Project', fr: 'Projet Capstone' }
+  userStories: { en: 'User Stories', fr: 'Histoires Utilisateur' }
 };
 
 function initNavigation() {
   const nav = document.getElementById('navigation');
   nav.innerHTML = '';
+  const lang = document.body.classList.contains('lang-fr') ? 'fr' : 'en';
 
   Object.entries(docs).forEach(([key, items]) => {
     const section = document.createElement('div');
@@ -40,26 +44,55 @@ function initNavigation() {
 
     const title = document.createElement('div');
     title.className = 'nav-section-title';
-    const lang = document.body.classList.contains('lang-fr') ? 'fr' : 'en';
     title.textContent = categories[key][lang];
     section.appendChild(title);
 
-    const ul = document.createElement('ul');
-    items.forEach(item => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      const lang = document.body.classList.contains('lang-fr') ? 'Fr' : 'En';
-      a.textContent = item[`title${lang}`];
-      a.dataset.file = item.file;
-      a.onclick = (e) => {
-        e.preventDefault();
-        loadDocument(a.dataset.file, a);
-      };
-      li.appendChild(a);
-      ul.appendChild(li);
-    });
+    // Check if this is Azure Project with nested structure
+    if (key === 'azureProject') {
+      // Create subsections for epic, feature, userStories
+      ['epic', 'feature', 'userStories'].forEach(subKey => {
+        if (items[subKey] && items[subKey].length > 0) {
+          const subTitle = document.createElement('div');
+          subTitle.className = 'nav-subsection-title';
+          subTitle.textContent = categories[subKey][lang];
+          section.appendChild(subTitle);
 
-    section.appendChild(ul);
+          const ul = document.createElement('ul');
+          items[subKey].forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            const titleLang = document.body.classList.contains('lang-fr') ? 'Fr' : 'En';
+            a.textContent = item[`title${titleLang}`];
+            a.dataset.file = item.file;
+            a.onclick = (e) => {
+              e.preventDefault();
+              loadDocument(a.dataset.file, a);
+            };
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+          section.appendChild(ul);
+        }
+      });
+    } else {
+      // Regular section with direct items
+      const ul = document.createElement('ul');
+      items.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const titleLang = document.body.classList.contains('lang-fr') ? 'Fr' : 'En';
+        a.textContent = item[`title${titleLang}`];
+        a.dataset.file = item.file;
+        a.onclick = (e) => {
+          e.preventDefault();
+          loadDocument(a.dataset.file, a);
+        };
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      section.appendChild(ul);
+    }
+
     nav.appendChild(section);
   });
 }
