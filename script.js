@@ -72,8 +72,8 @@ function loadDocument(filePath, linkElement) {
   document.querySelectorAll('a[data-file]').forEach(a => a.classList.remove('active'));
   linkElement.classList.add('active');
 
-  loading.classList.add('active');
-  welcome.style.display = 'none';
+  if (loading) loading.classList.add('active');
+  if (welcome) welcome.style.display = 'none';
 
   // Use root URL for GitHub Pages
   const baseUrl = window.location.pathname.includes('/bootcamp_ai') ? '/bootcamp_ai/' : '/';
@@ -89,7 +89,7 @@ function loadDocument(filePath, linkElement) {
     .then(markdown => {
       const html = marked.parse(markdown);
       content.innerHTML = html;
-      loading.classList.remove('active');
+      if (loading) loading.classList.remove('active');
 
       if (window.mermaid) {
         mermaid.contentLoaded();
@@ -98,7 +98,7 @@ function loadDocument(filePath, linkElement) {
     .catch(error => {
       console.error('Error:', error);
       content.innerHTML = `<p style="color: red;"><span data-lang="en">Error loading document:</span><span data-lang="fr">Erreur lors du chargement du document :</span> ${error.message}</p>`;
-      loading.classList.remove('active');
+      if (loading) loading.classList.remove('active');
     });
 }
 
