@@ -29,6 +29,7 @@ defaults:
 # Navigation
 header_pages:
   - index.md
+  - app.md
   - docs.md
 
 # Exclude from processing
