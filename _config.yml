@@ -42,9 +42,4 @@ exclude:
   - vendor/
 
 # Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# GitHub Pages specific
-github: [metadata]
+plugins: []
