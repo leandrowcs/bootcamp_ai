@@ -96,4 +96,4 @@ Project Name: BootcampAI
 
 ## Notes
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
-- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-14
+- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

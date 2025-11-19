@@ -22,7 +22,7 @@ Explain each diagram and how it relates to the use cases.
 ## Notes
 - Tags: ai, demo, documentation, mermaid
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
-- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-17
+- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18
 ```
 
 ### Suggested supplementary prompt:
