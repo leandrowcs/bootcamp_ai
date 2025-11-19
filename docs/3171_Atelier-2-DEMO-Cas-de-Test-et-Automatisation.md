@@ -14,11 +14,11 @@
 You are a QA engineer specialized in automation.
 Based on the following [instructions or code or JIRA documentation or Workflow].
 Generate:
-- <span data-lang="en">Functional or E2E test cases</span><span data-lang="fr">Cas de test fonctionnels ou E2E</span>
+- Functional or E2E test cases
 - BDD structure (Given-When-Then)
-<span data-lang="en">Create a document .md with all test cases generated.</span><span data-lang="fr">Créez un document .md avec tous les cas de test générés.</span>
+Create a document .md with all test cases generated.
 
-<span data-lang="en">Output format:</span><span data-lang="fr">Format de sortie :</span>
+Output format:
 Test Case: <Test ##> - <Test Case Title>
 Description: <Test Case Description>
 Steps:
@@ -29,7 +29,7 @@ Steps:
 
 #### <span data-lang="en">A. Instructions</span><span data-lang="fr">A. Instructions</span>
 ```
-<span data-lang="en">The application must allow employees to log in, view their work schedule, and request time off. Managers can approve or reject time-off requests.</span><span data-lang="fr">L'application doit permettre aux employés de se connecter, de consulter leur horaire de travail et de demander des congés. Les gestionnaires peuvent approuver ou rejeter les demandes de congé.</span>
+The application must allow employees to log in, view their work schedule, and request time off. Managers can approve or reject time-off requests.
 ```
 
 #### <span data-lang="en">B. Code</span><span data-lang="fr">B. Code</span>
@@ -70,30 +70,30 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 #### <span data-lang="en">C. JIRA documentation</span><span data-lang="fr">C. Documentation JIRA</span>
 ```
-<span data-lang="en">As an employee, I want to view my weekly schedule so that I can plan my tasks accordingly.</span><span data-lang="fr">En tant qu'employé, je veux consulter mon horaire hebdomadaire afin de pouvoir planifier mes tâches en conséquence.</span>
-<span data-lang="en">Acceptance Criteria:</span><span data-lang="fr">Critères d'acceptation :</span>
-- <span data-lang="en">Display schedule for the current week.</span><span data-lang="fr">Afficher l'horaire pour la semaine en cours.</span>
-- <span data-lang="en">Highlight holidays and approved time-off.</span><span data-lang="fr">Mettre en évidence les jours fériés et les congés approuvés.</span>
+As an employee, I want to view my weekly schedule so that I can plan my tasks accordingly.
+Acceptance Criteria:
+- Display schedule for the current week.
+- Highlight holidays and approved time-off.
 ```
 
 #### <span data-lang="en">D. Workflow</span><span data-lang="fr">D. Flux de travail</span>
 ```
-<span data-lang="en">Employee logs in → Views schedule → Requests time off → Manager approves/rejects → System updates schedule.</span><span data-lang="fr">L'employé se connecte → Consulte l'horaire → Demande un congé → Le gestionnaire approuve/rejette → Le système met à jour l'horaire.</span>
+Employee logs in → Views schedule → Requests time off → Manager approves/rejects → System updates schedule.
 ```
 
 ### <span data-lang="en">4.2 Generate automated scripts</span><span data-lang="fr">4.2 Générer des scripts automatisés</span>
 
 #### <span data-lang="en">Example prompt:</span><span data-lang="fr">Exemple de prompt :</span>
 ```
-<span data-lang="en">You are a QA engineer specialized in automation.</span><span data-lang="fr">Vous êtes un ingénieur QA spécialisé en automatisation.</span>
-<span data-lang="en">Based on the test cases written in the file [filename.md], generate:</span><span data-lang="fr">Basé sur les cas de test écrits dans le fichier [filename.md], générez :</span>
-- <span data-lang="en">Automation code scripts using Cypress in JavaScript</span><span data-lang="fr">Scripts de code d'automatisation utilisant Cypress en JavaScript</span>
-- <span data-lang="en">A simple automation script implementing the main test cases</span><span data-lang="fr">Un script d'automatisation simple implémentant les principaux cas de test</span>
-- <span data-lang="en">Documentation explaining:</span><span data-lang="fr">Documentation expliquant :</span>
-    * <span data-lang="en">How the automation code is organized</span><span data-lang="fr">Comment le code d'automatisation est organisé</span>
-    * <span data-lang="en">Best practices applied (e.g., Page Object Model, reusable commands)</span><span data-lang="fr">Meilleures pratiques appliquées (par exemple, Page Object Model, commandes réutilisables)</span>
-    * <span data-lang="en">How to execute the tests locally and integrate them into a CI/CD pipeline</span><span data-lang="fr">Comment exécuter les tests localement et les intégrer dans un pipeline CI/CD</span>
-<span data-lang="en">Include comments in the code for clarity.</span><span data-lang="fr">Incluez des commentaires dans le code pour plus de clarté.</span>
+You are a QA engineer specialized in automation.
+Based on the test cases written in the file [filename.md], generate:
+- Automation code scripts using Cypress in JavaScript
+- A simple automation script implementing the main test cases
+- Documentation explaining:
+    * How the automation code is organized
+    * Best practices applied (e.g., Page Object Model, reusable commands)
+    * How to execute the tests locally and integrate them into a CI/CD pipeline
+Include comments in the code for clarity.
 ```
 
 ## Notes

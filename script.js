@@ -103,16 +103,43 @@ function loadDocument(filePath, linkElement) {
 }
 
 function toggleLanguage() {
+  const activeLink = document.querySelector('a[data-file].active');
+  const activeFile = activeLink ? activeLink.dataset.file : null;
+  
   document.body.classList.toggle('lang-fr');
-  localStorage.setItem('preferredLanguage', document.body.classList.contains('lang-fr') ? 'fr' : 'en');
+  const isFrench = document.body.classList.contains('lang-fr');
+  localStorage.setItem('preferredLanguage', isFrench ? 'fr' : 'en');
+  
+  // Update language button state
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`[data-lang-btn="${isFrench ? 'fr' : 'en'}"]`).classList.add('active');
+  
   initNavigation();
+  
+  // Restore active menu item
+  if (activeFile) {
+    const newActiveLink = document.querySelector(`a[data-file="${activeFile}"]`);
+    if (newActiveLink) {
+      newActiveLink.classList.add('active');
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   const saved = localStorage.getItem('preferredLanguage');
-  if (saved === 'fr') {
+  const isFrench = saved === 'fr';
+  
+  if (isFrench) {
     document.body.classList.add('lang-fr');
   }
+  
+  // Set initial language button state
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`[data-lang-btn="${isFrench ? 'fr' : 'en'}"]`).classList.add('active');
 
   initNavigation();
 });

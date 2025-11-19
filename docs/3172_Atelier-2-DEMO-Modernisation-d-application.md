@@ -28,12 +28,12 @@ Create a .md file with all information for setup and execution.
 
 <span data-lang="en">Prompt for conversion:</span><span data-lang="fr">Prompt pour la conversion :</span>
 ```
-<span data-lang="en">You are a system modernization expert.</span><span data-lang="fr">Vous êtes un expert en modernisation de systèmes.</span>
-<span data-lang="en">Convert the following C++ code to Python, keeping the original logic but applying modern best practices:</span><span data-lang="fr">Convertissez le code C++ suivant en Python, en conservant la logique originale mais en appliquant les meilleures pratiques modernes :</span>
-- <span data-lang="en">Use of functions</span><span data-lang="fr">Utilisation de fonctions</span>
-- <span data-lang="en">Input validation</span><span data-lang="fr">Validation des entrées</span>
-- <span data-lang="en">Clear messages</span><span data-lang="fr">Messages clairs</span>
-<span data-lang="en">Explain the main changes made.</span><span data-lang="fr">Expliquez les principaux changements effectués.</span>
+You are a system modernization expert.
+Convert the following C++ code to Python, keeping the original logic but applying modern best practices:
+- Use of functions
+- Input validation
+- Clear messages
+Explain the main changes made.
 ```
 
 ## Notes

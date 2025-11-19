@@ -65,6 +65,17 @@ header p {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+.lang-btn {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.lang-btn.active {
+  opacity: 1;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -239,6 +250,18 @@ body.lang-fr [data-lang="en"] {
 }
 
 body.lang-fr [data-lang="fr"] {
+  display: inherit;
+}
+
+li [data-lang] {
+  display: inline;
+}
+
+body.lang-fr li [data-lang="en"] {
+  display: none;
+}
+
+body.lang-fr li [data-lang="fr"] {
   display: inline;
 }
 
