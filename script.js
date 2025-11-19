@@ -8,7 +8,8 @@ const docs = {
     { id: '3172', titleEn: 'Workshop 2 - DEMO Application Modernization', titleFr: 'Atelier 2 - DEMO Modernisation d\'application', file: 'docs/3172_Atelier-2-DEMO-Modernisation-d-application.md' }
   ],
   capstone: [
-    { id: '3173', titleEn: 'Capstone Project - Bootcamp AI', titleFr: 'Projet Capstone - Bootcamp AI', file: 'docs/3173_Capstone-Project-Bootcamp-AI.md' }
+    { id: '3173', titleEn: 'Capstone Project - Bootcamp AI', titleFr: 'Projet Capstone - Bootcamp AI', file: 'docs/3173_Capstone-Project-Bootcamp-AI.md' },
+    { id: '3174', titleEn: 'Capstone Project 2 - Bootcamp AI', titleFr: 'Projet Capstone 2 - Bootcamp AI', file: 'docs/3174_Capstone-Project_2-Bootcamp-AI.md' }
   ],
   azureProject: {
     epic: [
