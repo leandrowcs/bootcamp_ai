@@ -20,21 +20,11 @@ Afin de vérifier la conformité des horaires et préparer la paie.
 
 ## <span data-lang="en">Acceptance Criteria</span><span data-lang="fr">Critères d'acceptation</span>
 
-<span data-lang="en">
-- I can select a period (default: current week).
-- The report displays for each employee: total hours, overtime, and days worked.
-- Overtime (>40 hours/week) is highlighted.
-- I can export the report in PDF and CSV formats.
-- The report is accessible only to authorized users.
-</span>
-
-<span data-lang="fr">
-- Je peux sélectionner une période (par défaut : la semaine en cours).
-- Le rapport affiche pour chaque employé : nombre total d'heures, heures supplémentaires, et jours travaillés.
-- Les heures supplémentaires (>40 heures/semaine) sont mises en évidence.
-- Je peux exporter le rapport en format PDF et CSV.
-- Le rapport est accessible uniquement aux utilisateurs autorisés.
-</span>
+- <span data-lang="en">I can select a period (default: current week).</span><span data-lang="fr">Je peux sélectionner une période (par défaut : la semaine en cours).</span>
+- <span data-lang="en">The report displays for each employee: total hours, overtime, and days worked.</span><span data-lang="fr">Le rapport affiche pour chaque employé : nombre total d'heures, heures supplémentaires, et jours travaillés.</span>
+- <span data-lang="en">Overtime (>40 hours/week) is highlighted.</span><span data-lang="fr">Les heures supplémentaires (>40 heures/semaine) sont mises en évidence.</span>
+- <span data-lang="en">I can export the report in PDF and CSV formats.</span><span data-lang="fr">Je peux exporter le rapport en format PDF et CSV.</span>
+- <span data-lang="en">The report is accessible only to authorized users.</span><span data-lang="fr">Le rapport est accessible uniquement aux utilisateurs autorisés.</span>
 
 ## Notes
 - Tags: demo, exportation, rapport, rh
