@@ -125,6 +125,9 @@ function loadDocument(filePath, linkElement) {
       content.innerHTML = html;
       if (loading) loading.classList.remove('active');
 
+      // Wrap example prompt sections in collapsible details
+      wrapPromptBlocks();
+
       // Apply current language class to content spans
       applyLanguageToContent();
 
@@ -137,6 +140,39 @@ function loadDocument(filePath, linkElement) {
       content.innerHTML = `<p style="color: red;"><span data-lang="en">Error loading document:</span><span data-lang="fr">Erreur lors du chargement du document :</span> ${error.message}</p>`;
       if (loading) loading.classList.remove('active');
     });
+}
+
+function wrapPromptBlocks() {
+  const content = document.getElementById('content');
+  if (!content) return;
+  const headings = content.querySelectorAll('h3, h4');
+  const keywords = [
+    'Example prompt',
+    'Exemple de prompt',
+    'Suggested supplementary prompt',
+    'Prompt supplémentaire suggéré'
+  ];
+
+  headings.forEach(h => {
+    const inner = h.innerHTML;
+    if (!keywords.some(k => inner.includes(k))) return;
+    let codeBlock = h.nextElementSibling;
+    // Skip non <pre> siblings (e.g., blank paragraphs)
+    while (codeBlock && codeBlock.tagName && codeBlock.tagName.toLowerCase() !== 'pre') {
+      codeBlock = codeBlock.nextElementSibling;
+    }
+    if (!codeBlock || codeBlock.tagName.toLowerCase() !== 'pre') return;
+
+    const details = document.createElement('details');
+    details.className = 'prompt-block';
+    const summary = document.createElement('summary');
+    // Remove trailing colon(s) but keep bilingual spans
+    summary.innerHTML = inner.replace(/(:\s*)?<\/span>/g, '</span>').replace(/:\s*$/,'');
+    details.appendChild(summary);
+    details.appendChild(codeBlock.cloneNode(true));
+    codeBlock.remove();
+    h.replaceWith(details);
+  });
 }
 
 function applyLanguageToContent() {
