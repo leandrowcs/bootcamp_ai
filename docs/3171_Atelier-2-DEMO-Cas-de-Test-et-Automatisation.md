@@ -96,9 +96,6 @@ Based on the test cases written in the file [filename.md], generate:
 Include comments in the code for clarity.
 ```
 
-## Acceptance Criteria
-- Not specified
-
 ## Notes
 - Created: 2025-11-13
 - Last Changed: 2025-11-17

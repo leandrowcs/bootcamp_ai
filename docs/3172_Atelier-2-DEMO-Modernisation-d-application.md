@@ -36,9 +36,6 @@ Convert the following C++ code to Python, keeping the original logic but applyin
 Explain the main changes made.
 ```
 
-## Acceptance Criteria
-- Not specified
-
 ## Notes
 - Created: 2025-11-13
 - Last Changed: 2025-11-17

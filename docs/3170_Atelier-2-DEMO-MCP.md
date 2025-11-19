@@ -94,9 +94,6 @@ Follow these instructions:
 Project Name: BootcampAI
 ```
 
-## Acceptance Criteria
-- Not specified
-
 ## Notes
 - Created: 2025-11-13
 - Last Changed: 2025-11-14

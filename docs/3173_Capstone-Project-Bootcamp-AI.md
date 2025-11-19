@@ -68,9 +68,6 @@ Deliverables:
 - Documented test cases and automated scripts with Cypress and explanation of execution steps
 ```
 
-## Acceptance Criteria
-- Not specified
-
 ## Notes
 - Created: 2025-11-13
 - Last Changed: 2025-11-18

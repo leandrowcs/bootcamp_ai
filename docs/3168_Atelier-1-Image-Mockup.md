@@ -5,10 +5,13 @@
 **Priority:** 2  
 
 ## Description
-Creation d'une application Frontend + Backend
+**Objective:** Show how AI can automatically generate websites based on image mockups.
 
-## Acceptance Criteria
-- Not specified
+### Example prompt:
+```
+Creation d'une application Frontend + Backend based on the following image mockup:
+![Image Mockup](docs/UX_Prompt.png)
+```
 
 ## Notes
 - Created: 2025-11-13

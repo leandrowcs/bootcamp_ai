@@ -31,9 +31,6 @@ Take the previous documentation, create a version 2.0 and improve it by:
 Explain how each new diagram complements the previous ones and why these details are important for developers and stakeholders.
 ```
 
-## Acceptance Criteria
-- Not specified
-
 ## Notes
 - Created: 2025-11-13
 - Last Changed: 2025-11-14
