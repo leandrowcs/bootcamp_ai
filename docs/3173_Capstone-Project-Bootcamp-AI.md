@@ -1,8 +1,4 @@
 # <span data-lang="en">Capstone Project - Bootcamp AI</span><span data-lang="fr">Projet Capstone - Bootcamp IA</span>
-**ID:** 3173  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 <span data-lang="en">Full-Stack Modular Application with Documentation and Testing.</span><span data-lang="fr">Application Full-Stack Modulaire avec Documentation et Tests.</span>
@@ -69,5 +65,9 @@ Deliverables:
 ```
 
 ## Notes
+- **ID:** 3173
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

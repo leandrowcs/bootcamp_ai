@@ -1,8 +1,4 @@
 # <span data-lang="en">Workshop 2 - DEMO MCP</span><span data-lang="fr">Atelier 2 - DEMO MCP</span>
-**ID:** 3170  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 **<span data-lang="en">Objective</span><span data-lang="fr">Objectif</span>:** <span data-lang="en">Demonstrate how AI can generate code to integrate with management tools.</span><span data-lang="fr">Démontrer comment l'IA peut générer du code pour s'intégrer avec des outils de gestion.</span>
@@ -95,5 +91,9 @@ Project Name: BootcampAI
 ```
 
 ## Notes
+- **ID:** 3170
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

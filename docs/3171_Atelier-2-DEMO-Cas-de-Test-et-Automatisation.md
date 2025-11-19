@@ -1,8 +1,4 @@
 # <span data-lang="en">Workshop 2 - DEMO Test Cases and Automation</span><span data-lang="fr">Atelier 2 - DEMO Cas de Test et Automatisation</span>
-**ID:** 3171  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 **<span data-lang="en">Objective</span><span data-lang="fr">Objectif</span>:** <span data-lang="en">Show how AI can generate test cases from code or requirements. And after can generate the automation scripts too.</span><span data-lang="fr">Montrer comment l'IA peut générer des cas de test à partir de code ou d'exigences. Et ensuite peut aussi générer les scripts d'automatisation.</span>
@@ -97,5 +93,9 @@ Include comments in the code for clarity.
 ```
 
 ## Notes
+- **ID:** 3171
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

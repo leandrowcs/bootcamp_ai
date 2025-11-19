@@ -1,8 +1,4 @@
 # <span data-lang="en">Workshop 1 - BASIC Calculator</span><span data-lang="fr">Atelier 1 - Calculatrice BASIC</span>
-**ID:** 3167  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 
@@ -22,5 +18,9 @@ Improve the previous calculator program by adding the following features:
 ```
 
 ## Notes
+- **ID:** 3167
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

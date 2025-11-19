@@ -1,8 +1,4 @@
 # <span data-lang="en">Record and View Employee Work Hours</span><span data-lang="fr">Enregistrer et consulter les heures de travail des employés</span>
-**ID:** 3203  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Feature  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 
@@ -24,6 +20,10 @@
 - <span data-lang="en">Reports must be exportable in PDF and CSV formats.</span><span data-lang="fr">Les rapports doivent être exportables en format PDF et CSV.</span>
 
 ## Notes
+- **ID:** 3203
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Feature
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - Tags: demo, rapport, rh, temps_de_travail
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

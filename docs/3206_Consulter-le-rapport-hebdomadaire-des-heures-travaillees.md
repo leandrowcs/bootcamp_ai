@@ -1,8 +1,4 @@
 # <span data-lang="en">View Weekly Work Hours Report</span><span data-lang="fr">Consulter le rapport hebdomadaire des heures travaillées</span>
-**ID:** 3206  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** User Story  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 
@@ -27,6 +23,10 @@ Afin de vérifier la conformité des horaires et préparer la paie.
 - <span data-lang="en">The report is accessible only to authorized users.</span><span data-lang="fr">Le rapport est accessible uniquement aux utilisateurs autorisés.</span>
 
 ## Notes
+- **ID:** 3206
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** User Story
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - Tags: demo, exportation, rapport, rh
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18

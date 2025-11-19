@@ -1,8 +1,4 @@
 # <span data-lang="en">Workshop 2 - DEMO Application Modernization</span><span data-lang="fr">Atelier 2 - DEMO Modernisation d'application</span>
-**ID:** 3172  
-**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
-**Status:** New  
-**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
 ## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
 **<span data-lang="en">Objective</span><span data-lang="fr">Objectif</span>:** <span data-lang="en">Show how a well-crafted prompt can migrate legacy code to a modern language.</span><span data-lang="fr">Montrer comment un prompt bien conçu peut migrer du code hérité vers un langage moderne.</span>
@@ -37,5 +33,9 @@ Explain the main changes made.
 ```
 
 ## Notes
+- **ID:** 3172
+- **<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task
+- **Status:** New
+- **<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2
 - <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-13
 - <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18
