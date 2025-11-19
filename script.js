@@ -92,6 +92,9 @@ function loadDocument(filePath, linkElement) {
       content.innerHTML = html;
       if (loading) loading.classList.remove('active');
 
+      // Apply current language class to content spans
+      applyLanguageToContent();
+
       if (window.mermaid) {
         mermaid.contentLoaded();
       }
@@ -101,6 +104,24 @@ function loadDocument(filePath, linkElement) {
       content.innerHTML = `<p style="color: red;"><span data-lang="en">Error loading document:</span><span data-lang="fr">Erreur lors du chargement du document :</span> ${error.message}</p>`;
       if (loading) loading.classList.remove('active');
     });
+}
+
+function applyLanguageToContent() {
+  const isFrench = document.body.classList.contains('lang-fr');
+  const content = document.getElementById('content');
+  
+  if (content) {
+    const enSpans = content.querySelectorAll('[data-lang="en"]');
+    const frSpans = content.querySelectorAll('[data-lang="fr"]');
+    
+    enSpans.forEach(span => {
+      span.style.display = isFrench ? 'none' : 'inline';
+    });
+    
+    frSpans.forEach(span => {
+      span.style.display = isFrench ? 'inline' : 'none';
+    });
+  }
 }
 
 function toggleLanguage() {
@@ -116,6 +137,9 @@ function toggleLanguage() {
     btn.classList.remove('active');
   });
   document.querySelector(`[data-lang-btn="${isFrench ? 'fr' : 'en'}"]`).classList.add('active');
+  
+  // Apply language to currently loaded content
+  applyLanguageToContent();
   
   initNavigation();
   
