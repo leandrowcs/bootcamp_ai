@@ -1,24 +1,24 @@
 const docs = {
   epic: [
-    { id: '3202', title: 'DEMO', file: 'docs/3202_DEMO.md' }
+    { id: '3202', titleEn: 'DEMO', titleFr: 'DEMO', file: 'docs/3202_DEMO.md' }
   ],
   feature: [
-    { id: '3203', title: 'Enregistrer et consulter les heures de travail des employés', file: 'docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.md' }
+    { id: '3203', titleEn: 'Record and View Employee Work Hours', titleFr: 'Enregistrer et consulter les heures de travail des employés', file: 'docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.md' }
   ],
   userStories: [
-    { id: '3204', title: 'Ajouter les heures travaillées pour un employé', file: 'docs/3204_Ajouter-les-heures-travaillees-pour-un-employe.md' },
-    { id: '3206', title: 'Consulter le rapport hebdomadaire des heures travaillées', file: 'docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.md' }
+    { id: '3204', titleEn: 'Add Worked Hours for Employee', titleFr: 'Ajouter les heures travaillées pour un employé', file: 'docs/3204_Ajouter-les-heures-travaillees-pour-un-employe.md' },
+    { id: '3206', titleEn: 'View Weekly Work Hours Report', titleFr: 'Consulter le rapport hebdomadaire des heures travaillées', file: 'docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.md' }
   ],
   workshops: [
-    { id: '3167', title: 'Atelier 1 - Calculatrice BASIC', file: 'docs/3167_Atelier-1-Calculatrice-BASIC.md' },
-    { id: '3168', title: 'Atelier 1 - Image Mockup', file: 'docs/3168_Atelier-1-Image-Mockup.md' },
-    { id: '3169', title: 'Atelier 2 - DEMO Documentation Mermaid', file: 'docs/3169_Atelier-2-DEMO-Documentation-Mermaid.md' },
-    { id: '3170', title: 'Atelier 2 - DEMO MCP', file: 'docs/3170_Atelier-2-DEMO-MCP.md' },
-    { id: '3171', title: 'Atelier 2 - DEMO Cas de Test et Automatisation', file: 'docs/3171_Atelier-2-DEMO-Cas-de-Test-et-Automatisation.md' },
-    { id: '3172', title: 'Atelier 2 - DEMO Modernisation d\'application', file: 'docs/3172_Atelier-2-DEMO-Modernisation-d-application.md' }
+    { id: '3167', titleEn: 'Workshop 1 - BASIC Calculator', titleFr: 'Atelier 1 - Calculatrice BASIC', file: 'docs/3167_Atelier-1-Calculatrice-BASIC.md' },
+    { id: '3168', titleEn: 'Workshop 1 - Image Mockup', titleFr: 'Atelier 1 - Image Mockup', file: 'docs/3168_Atelier-1-Image-Mockup.md' },
+    { id: '3169', titleEn: 'Workshop 2 - DEMO Mermaid Documentation', titleFr: 'Atelier 2 - DEMO Documentation Mermaid', file: 'docs/3169_Atelier-2-DEMO-Documentation-Mermaid.md' },
+    { id: '3170', titleEn: 'Workshop 2 - DEMO MCP', titleFr: 'Atelier 2 - DEMO MCP', file: 'docs/3170_Atelier-2-DEMO-MCP.md' },
+    { id: '3171', titleEn: 'Workshop 2 - DEMO Test Cases and Automation', titleFr: 'Atelier 2 - DEMO Cas de Test et Automatisation', file: 'docs/3171_Atelier-2-DEMO-Cas-de-Test-et-Automatisation.md' },
+    { id: '3172', titleEn: 'Workshop 2 - DEMO Application Modernization', titleFr: 'Atelier 2 - DEMO Modernisation d\'application', file: 'docs/3172_Atelier-2-DEMO-Modernisation-d-application.md' }
   ],
   capstone: [
-    { id: '3173', title: 'Capstone Project - Bootcamp AI', file: 'docs/3173_Capstone-Project-Bootcamp-AI.md' }
+    { id: '3173', titleEn: 'Capstone Project - Bootcamp AI', titleFr: 'Projet Capstone - Bootcamp AI', file: 'docs/3173_Capstone-Project-Bootcamp-AI.md' }
   ]
 };
 
@@ -48,7 +48,8 @@ function initNavigation() {
     items.forEach(item => {
       const li = document.createElement('li');
       const a = document.createElement('a');
-      a.textContent = item.title;
+      const lang = document.body.classList.contains('lang-fr') ? 'Fr' : 'En';
+      a.textContent = item[`title${lang}`];
       a.dataset.file = item.file;
       a.onclick = (e) => {
         e.preventDefault();

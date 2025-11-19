@@ -19,13 +19,7 @@ Create documentation for a simple employee and work schedule management web appl
 Explain each diagram and how it relates to the use cases.
 ```
 
-## Notes
-- Tags: ai, demo, documentation, mermaid
-- <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
-- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18
-```
-
-### Suggested supplementary prompt:
+### <span data-lang="en">Suggested supplementary prompt:</span><span data-lang="fr">Prompt complémentaire suggéré :</span>
 ```
 You are a technical writer and software architect.
 Take the previous documentation, create a version 2.0 and improve it by:
@@ -37,6 +31,7 @@ Take the previous documentation, create a version 2.0 and improve it by:
 Explain how each new diagram complements the previous ones and why these details are important for developers and stakeholders.
 ```
 
-## Notes
-- Created: 2025-11-13
-- Last Changed: 2025-11-14
+## <span data-lang="en">Notes</span><span data-lang="fr">Notes</span>
+- <span data-lang="en">Tags</span><span data-lang="fr">Tags</span>: ai, demo, documentation, mermaid
+- <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
+- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-18
