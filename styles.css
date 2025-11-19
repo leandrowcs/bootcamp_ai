@@ -292,3 +292,17 @@ body.lang-fr li [data-lang="fr"] {
     font-size: 1.5rem;
   }
 }
+
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #555;
+}
+
+footer .footer-accent {
+  font-weight: 600;
+  color: var(--primary);
+}
