@@ -1,13 +1,13 @@
-# Atelier 2 - DEMO Documentation Mermaid
+# <span data-lang="en">Workshop 2 - DEMO Mermaid Documentation</span><span data-lang="fr">Atelier 2 - DEMO Documentation Mermaid</span>
 **ID:** 3169  
-**Type:** Task  
+**<span data-lang="en">Type</span><span data-lang="fr">Type</span>:** Task  
 **Status:** New  
-**Priority:** 2  
+**<span data-lang="en">Priority</span><span data-lang="fr">Priorité</span>:** 2  
 
-## Description
-**Objective:** Show how AI can automatically generate diagrams and flows.
+## <span data-lang="en">Description</span><span data-lang="fr">Description</span>
+**<span data-lang="en">Objective</span><span data-lang="fr">Objectif</span>:** <span data-lang="en">Show how AI can automatically generate diagrams and flows.</span><span data-lang="fr">Montrer comment l'IA peut générer automatiquement des diagrammes et des flux.</span>
 
-### Example prompt:
+### <span data-lang="en">Example prompt:</span><span data-lang="fr">Exemple de prompt :</span>
 ```
 You are a software architect.
 Create documentation for a simple employee and work schedule management web application including:
@@ -17,6 +17,12 @@ Create documentation for a simple employee and work schedule management web appl
 - Main use cases diagram
 - Markdown structure organized by sections
 Explain each diagram and how it relates to the use cases.
+```
+
+## Notes
+- Tags: ai, demo, documentation, mermaid
+- <span data-lang="en">Created</span><span data-lang="fr">Créé</span>: 2025-11-14
+- <span data-lang="en">Last Changed</span><span data-lang="fr">Dernière modification</span>: 2025-11-17
 ```
 
 ### Suggested supplementary prompt:
