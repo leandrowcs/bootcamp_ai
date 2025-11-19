@@ -4,9 +4,6 @@ description: Documentation for CGI Bootcamp AI Projects
 baseurl: "/bootcamp_ai"
 url: "https://leandrowcs.github.io"
 
-# Theme
-theme: minima
-
 # Build settings
 markdown: kramdown
 permalink: pretty
