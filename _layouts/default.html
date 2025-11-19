@@ -31,6 +31,13 @@
       padding: 0 2rem;
     }
     
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
     header h1 {
       font-size: 2rem;
       font-weight: 600;
@@ -40,6 +47,23 @@
     header p {
       opacity: 0.9;
       font-size: 1.1rem;
+    }
+    
+    .language-toggle {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+    
+    .language-toggle:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
     }
     
     nav {
@@ -168,6 +192,18 @@
       text-align: center;
     }
     
+    [data-lang="fr"] {
+      display: none;
+    }
+    
+    body.lang-fr [data-lang="en"] {
+      display: none;
+    }
+    
+    body.lang-fr [data-lang="fr"] {
+      display: inline;
+    }
+    
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
@@ -181,18 +217,50 @@
         margin: 1rem;
         padding: 1.5rem;
       }
+      
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .language-toggle {
+        margin-top: 1rem;
+      }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    
+    // Language toggle functionality
+    function toggleLanguage() {
+      const body = document.body;
+      const currentLang = body.classList.contains('lang-fr') ? 'fr' : 'en';
+      const newLang = currentLang === 'en' ? 'fr' : 'en';
+      
+      body.classList.toggle('lang-fr');
+      localStorage.setItem('preferredLanguage', newLang);
+    }
+    
+    // Load saved language preference
+    document.addEventListener('DOMContentLoaded', function() {
+      const saved = localStorage.getItem('preferredLanguage');
+      if (saved === 'fr') {
+        document.body.classList.add('lang-fr');
+      }
+    });
   </script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
+      <div class="header-top">
+        <div>
+          <h1>{{ site.title }}</h1>
+          <p>{{ site.description }}</p>
+        </div>
+        <button class="language-toggle" id="langToggle" onclick="toggleLanguage()">🌐 EN / FR</button>
+      </div>
     </div>
   </header>
   
