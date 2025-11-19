@@ -1,37 +1,39 @@
 ---
 layout: default
-title: Documentação
+title: Documentation
 ---
 
-# Documentação do Projeto
+# Project Documentation / Documentation du Projet
 
-Navegue pela documentação completa do BootcampAI.
+**EN:** Browse the complete BootcampAI documentation.
+
+**FR:** Parcourez la documentation complète du BootcampAI.
 
 ## Epic
-- [3202 - DEMO](3202_DEMO.html)
+- [3202 - DEMO](docs/3202_DEMO)
 
 ## Feature
-- [3203 - Enregistrer et consulter les heures de travail des employés](3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes.html)
+- [3203 - Record and View Employee Work Hours / Enregistrer et consulter les heures de travail des employés](docs/3203_Enregistrer-et-consulter-les-heures-de-travail-des-employes)
 
 ## User Stories
-- [3204 - Ajouter les heures travaillées pour un employé](3204_Ajouter-les-heures-travaillees-pour-un-employe.html)
-- [3206 - Consulter le rapport hebdomadaire des heures travaillées](3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees.html)
+- [3204 - Add Worked Hours for Employee / Ajouter les heures travaillées pour un employé](docs/3204_Ajouter-les-heures-travaillees-pour-un-employe)
+- [3206 - View Weekly Work Hours Report / Consulter le rapport hebdomadaire des heures travaillées](docs/3206_Consulter-le-rapport-hebdomadaire-des-heures-travaillees)
 
-## Ateliers
+## Workshops / Ateliers
 
-### Atelier 1
-- [3167 - Calculatrice BASIC](3167_Atelier-1-Calculatrice-BASIC.html)
-- [3168 - Image Mockup](3168_Atelier-1-Image-Mockup.html)
+### Workshop 1 / Atelier 1
+- [3167 - BASIC Calculator / Calculatrice BASIC](docs/3167_Atelier-1-Calculatrice-BASIC)
+- [3168 - Image Mockup](docs/3168_Atelier-1-Image-Mockup)
 
-### Atelier 2
-- [3169 - Documentation Mermaid](3169_Atelier-2-DEMO-Documentation-Mermaid.html)
-- [3170 - MCP](3170_Atelier-2-DEMO-MCP.html)
-- [3171 - Cas de Test et Automatisation](3171_Atelier-2-DEMO-Cas-de-Test-et-Automatisation.html)
-- [3172 - Modernisation d'application](3172_Atelier-2-DEMO-Modernisation-d-application.html)
+### Workshop 2 / Atelier 2
+- [3169 - Mermaid Documentation / Documentation Mermaid](docs/3169_Atelier-2-DEMO-Documentation-Mermaid)
+- [3170 - MCP](docs/3170_Atelier-2-DEMO-MCP)
+- [3171 - Test Cases and Automation / Cas de Test et Automatisation](docs/3171_Atelier-2-DEMO-Cas-de-Test-et-Automatisation)
+- [3172 - Application Modernization / Modernisation d'application](docs/3172_Atelier-2-DEMO-Modernisation-d-application)
 
-## Capstone Project
-- [3173 - Capstone Project - Bootcamp AI](3173_Capstone-Project-Bootcamp-AI.html)
+## Capstone Project / Projet Capstone
+- [3173 - Capstone Project - Bootcamp AI](docs/3173_Capstone-Project-Bootcamp-AI)
 
 ---
 
-[Retour à l'accueil](../index.html)
+[Back to Home / Retour à l'accueil](../index)
