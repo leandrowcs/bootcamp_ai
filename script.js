@@ -145,33 +145,46 @@ function loadDocument(filePath, linkElement) {
 function wrapPromptBlocks() {
   const content = document.getElementById('content');
   if (!content) return;
-  const headings = content.querySelectorAll('h3, h4');
-  const keywords = [
+  // Collect candidate elements: headings and inline span containers that introduce a prompt
+  const candidates = Array.from(content.querySelectorAll('h2, h3, h4, h5, p, span'));
+  const explicitKeywords = [
     'Example prompt',
     'Exemple de prompt',
     'Suggested supplementary prompt',
-    'Prompt supplémentaire suggéré'
+    'Prompt supplémentaire suggéré',
+    'Prompt to List All Tickets in Azure DevOps',
+    'Prompt to generate C++ code',
+    'Prompt pour générer du code C++',
+    'Prompt for conversion',
+    'Prompt pour la conversion'
   ];
 
-  headings.forEach(h => {
-    const inner = h.innerHTML;
-    if (!keywords.some(k => inner.includes(k))) return;
-    let codeBlock = h.nextElementSibling;
-    // Skip non <pre> siblings (e.g., blank paragraphs)
-    while (codeBlock && codeBlock.tagName && codeBlock.tagName.toLowerCase() !== 'pre') {
+  candidates.forEach(node => {
+    const innerText = node.textContent ? node.textContent.trim() : '';
+    // Determine if this node is a prompt introducer
+    const isPromptHeading = /prompt/i.test(innerText) && (innerText.endsWith(':') || innerText.toLowerCase().startsWith('prompt'));
+    const isExplicit = explicitKeywords.some(k => innerText.includes(k));
+    if (!isPromptHeading && !isExplicit) return;
+
+    // Find the next code block (<pre>) sibling (skip over non-pre elements)
+    let codeBlock = node.nextElementSibling;
+    while (codeBlock && codeBlock.tagName.toLowerCase() !== 'pre') {
       codeBlock = codeBlock.nextElementSibling;
     }
     if (!codeBlock || codeBlock.tagName.toLowerCase() !== 'pre') return;
 
+    // Avoid wrapping twice
+    if (node.tagName.toLowerCase() === 'details') return;
+
     const details = document.createElement('details');
     details.className = 'prompt-block';
     const summary = document.createElement('summary');
-    // Remove trailing colon(s) but keep bilingual spans
-    summary.innerHTML = inner.replace(/(:\s*)?<\/span>/g, '</span>').replace(/:\s*$/,'');
+    // Preserve bilingual spans if present; remove trailing colon
+    summary.innerHTML = node.innerHTML.replace(/:\s*$/,'');
     details.appendChild(summary);
     details.appendChild(codeBlock.cloneNode(true));
     codeBlock.remove();
-    h.replaceWith(details);
+    node.replaceWith(details);
   });
 }
 
