@@ -47,7 +47,7 @@ az devops login
     {
       "id": "ado_org",
       "type": "promptString",
-      "description": "Azure DevOps organization name (e.g. 'contoso')",
+      "description": "Azure DevOps organization moncentre",
       "password": false
     }
   ]
